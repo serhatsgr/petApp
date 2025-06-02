@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_update_pet"
+    android:padding="32dp">
+
+    <!-- İsim Alanı -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="İsim"
+            android:background="@drawable/edittext_background"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:inputType="textPersonName"
+            android:minHeight="56dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Tür Alanı -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tür"
+            android:background="@drawable/edittext_background"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:inputType="text"
+            android:minHeight="56dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Irk Alanı -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/race"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Irk"
+            android:background="@drawable/edittext_background"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:inputType="text"
+            android:minHeight="56dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Cinsiyet Alanı -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cinsiyet"
+            android:background="@drawable/edittext_background"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:inputType="text"
+            android:minHeight="56dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Ağırlık Alanı -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ağırlık"
+            android:background="@drawable/edittext_background"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:inputType="numberDecimal"
+            android:minHeight="56dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Doğum Tarihi Alanı -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/birthDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Doğum Tarihi"
+            android:background="@drawable/edittext_background"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:inputType="date"
+            android:minHeight="56dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Sahiplendirme Tarihi Alanı -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/adoptionDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sahiplendirme Tarihi"
+            android:background="@drawable/edittext_background"
+            android:textColor="@color/black"
+            android:padding="16dp"
+            android:inputType="date"
+            android:minHeight="56dp"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Güncelle Butonu -->
+    <Button
+        android:id="@+id/buttonUpdatePet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Güncelle"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:padding="16dp"/>
+</LinearLayout>
