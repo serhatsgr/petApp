@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_choice"
+    tools:context=".petChoicePage">
+
+    <!-- Hoş Geldiniz Alanı (Merhaba + Kullanıcı Adı) -->
+
+    <!-- Seçim Yazısı -->
+
+    <!-- Butonlar -->
+
+    <LinearLayout
+        android:id="@+id/hosgeldinizLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="85dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/merhaba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Merhaba,"
+            android:textColor="@color/purple_500"
+            android:textSize="30sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/kullaniciAdi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Kullanıcı Adı"
+            android:textColor="#333333"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/secim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hosgeldinizLayout"
+        android:layout_marginTop="75dp"
+        android:gravity="center"
+        android:text="İlgilenmek istediğin\nCan dostunu seç!"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/secim"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- İlk Satır -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPet1"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/button_background_circle"
+                android:text="Ekle"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnPet2"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/button_background_circle"
+                android:text="Ekle"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- İkinci Satır -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPet3"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/button_background_circle"
+                android:text="Ekle"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnPet4"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_margin="8dp"
+                android:background="@drawable/button_background_circle"
+                android:text="Ekle"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
