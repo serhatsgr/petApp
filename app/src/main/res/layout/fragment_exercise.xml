@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_exercise"
+    tools:context=".exerciseFragment">
+
+    <TextView
+        android:id="@+id/genel"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="60dp"
+        android:text="EGZERSİZLER"
+        android:textSize="40sp"
+        android:textStyle="bold|italic"
+        android:textColor="#6200EE"
+        android:layout_centerHorizontal="true"/>
+
+    <View
+        android:id="@+id/cizgi1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="70dp"
+        android:background="@android:color/black" />
+
+    <TextView
+        android:id="@+id/animalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HAYVAN ADI"
+        android:textSize="20sp"
+        android:layout_below="@id/cizgi1"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="160dp"
+        android:textColor="#333333"
+        android:layout_centerHorizontal="true"
+        />
+
+    <!-- Egzersiz Türü Girişi -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/exerciseTypeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cizgi1"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:boxBackgroundMode="none">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etExerciseType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Egzersiz Türü"
+            android:textColor="#4A4A4A"
+            android:textColorHint="#9E9E9E" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Egzersiz Süresi Girişi -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/exerciseDurationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exerciseTypeLayout"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:boxBackgroundMode="none">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etExerciseDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Egzersiz Süresi (dk)"
+            android:textColor="#4A4A4A"
+            android:textColorHint="#9E9E9E" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Egzersiz Tarihi Girişi -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/exerciseDateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exerciseDurationLayout"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:boxBackgroundMode="none">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etExerciseDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Egzersiz Tarihi (Tıkla)"
+            android:textColor="#4A4A4A"
+            android:textColorHint="#9E9E9E"
+            android:focusable="false"
+            android:clickable="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Egzersiz Saati Girişi -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/exerciseTimeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exerciseDateLayout"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:boxBackgroundMode="none">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etExerciseTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Egzersiz Saati (Tıkla)"
+            android:textColor="#4A4A4A"
+            android:textColorHint="#9E9E9E"
+            android:focusable="false"
+            android:clickable="true" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Egzersizi Ekle Butonu -->
+    <Button
+        android:id="@+id/btnadd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/exerciseTimeLayout"
+        android:text="Egzersizi Ekle"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Egzersiz Geçmişi Butonu -->
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnadd"
+        android:text="Egzersiz Geçmişi"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
