@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@drawable/background_allergy"
+    tools:context=".AllergyPage">
+
+    <!-- Başlık -->
+    <TextView
+        android:id="@+id/txtAllergyTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alerjiler"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple_500"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/edtAllergy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alerji Adı"
+        android:padding="12dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/edit_text"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btnAddAllergy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ekle"
+        android:backgroundTint="@color/purple_500"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/allergyListLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+    </ScrollView>
+
+</LinearLayout>
