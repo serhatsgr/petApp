@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_healt"
+    tools:context=".healtFragment">
+
+    <!-- Başlık - Sağlık -->
+    <TextView
+        android:id="@+id/genel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="SAĞLIK"
+        android:textColor="#6200EE"
+        android:textSize="40sp"
+        android:textStyle="bold|italic" />
+
+    <!-- Ayırıcı Çizgi 1 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/cizgi1"
+        android:background="@android:color/black"
+        android:layout_below="@id/genel"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Hayvan İsmi Etiketi -->
+    <TextView
+        android:id="@+id/animalNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HAYVAN İSMİ"
+        android:textSize="20sp"
+        android:textColor="#333333"
+        android:layout_below="@id/cizgi1"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Ayırıcı Çizgi 2 -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/cizgi2"
+        android:background="@android:color/black"
+        android:layout_below="@id/animalNameLabel"
+        android:layout_marginTop="10dp"/>
+
+    <!-- 4'lü Butonlar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cizgi2"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- İlk Satır -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Aşılar Butonu -->
+            <Button
+                android:id="@+id/asiBtn"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="16dp"
+                android:text="AŞILAR"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:background="@drawable/button_background_circle" />
+
+            <!-- Alınan İlaçlar Butonu -->
+            <Button
+                android:id="@+id/addMedication"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="16dp"
+                android:text="İLAÇLAR"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:background="@drawable/button_background_circle" />
+        </LinearLayout>
+
+        <!-- İkinci Satır -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Alerjiler Butonu -->
+            <Button
+                android:id="@+id/btnAllergy"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="16dp"
+                android:text="ALERJİLER"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:background="@drawable/button_background_circle" />
+
+            <!-- Veteriner Notları Butonu -->
+            <Button
+                android:id="@+id/btnWeight"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_margin="16dp"
+                android:text="NOTLAR"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:background="@drawable/button_background_circle" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtHealtInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="85dp"
+            android:text="DİKKAT EDİLMESİ GEREKENLER"
+            android:textColor="#6A0DAD"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtHealtInfoContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginTop="16dp"
+            android:padding="16dp"
+            android:background="#F0F0F0"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:lineSpacingExtra="4dp"
+            />
+    </LinearLayout>
+</RelativeLayout>
