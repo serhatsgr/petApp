@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mama Hatırlatıcı"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:textColor="@color/black"/>
+
+    <TimePicker
+        android:id="@+id/time_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        />
+
+    <Button
+        android:id="@+id/btn_add_routine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mama Saati Ekle"
+        android:backgroundTint="@color/teal_700"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_meal_times"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingTop="16dp"/>
+
+    <Button
+        android:id="@+id/btn_set_alarms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hatırlatıcıları Kaydet ve Kur"
+        android:backgroundTint="@color/teal_700"
+        android:background="@color/purple_500"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>
